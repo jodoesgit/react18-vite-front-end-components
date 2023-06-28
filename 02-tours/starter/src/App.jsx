@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import Loading from "./Loading";
+import Tours from "./Tours";
 
 const url = "https://course-api.com/react-tours-project";
 
@@ -11,15 +13,29 @@ const App = () => {
 		try {
 			const response = await fetch(url);
 			const tours = await response.json();
+			setTours(tours);
 			// console.log(tours);
 		} catch (error) {
 			// console.log(error);
 		}
+		setIsLoading(false);
 	};
 
 	useEffect(() => {
 		fetchTours();
 	}, []);
-	return <h2>Tours Starter</h2>;
+
+	if (isLoading) {
+		return (
+			<main>
+				<Loading />
+			</main>
+		);
+	}
+	return (
+		<main>
+			<Tours tours={tours} />
+		</main>
+	);
 };
 export default App;
