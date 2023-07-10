@@ -1,5 +1,12 @@
-const App = () => {
-  return <h2>Grocery Bud - Starter</h2>;
-};
+import { useState } from "react";
+import Form from "./Form";
 
+const App = () => {
+	const [items, setItems] = useState([]);
+	return (
+		<section className="section-center">
+			<Form />
+		</section>
+	);
+};
 export default App;
