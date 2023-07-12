@@ -306,3 +306,49 @@ nav {
 	overflow: hidden;
 	transition: var(--transition);
 }
+
+.social-icons {
+	display: none;
+}
+
+@media screen and (min-width: 800px) {
+	.nav-toggle {
+		display: none;
+	}
+	.nav-header {
+		padding: 0;
+	}
+	.nav-center {
+		max-width: 1170px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+	.links-container {
+		height: auto !important;
+	}
+	.links {
+		display: flex;
+		gap: 0.5rem;
+	}
+	.links a {
+		padding: 0;
+	}
+	.links a:hover {
+		padding: 0;
+		background: transparent;
+	}
+	.social-icons {
+		display: flex;
+		gap: 0.5rem;
+	}
+	.social-icons a {
+		color: var(--primary-500);
+		transition: var(--transition);
+	}
+	.social-icons a:hover {
+		color: var(--primary-300);
+	}
+}
