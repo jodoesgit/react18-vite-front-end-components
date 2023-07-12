@@ -303,11 +303,6 @@ nav {
 /* 160px - 10rem */
 
 .links-container {
-	height: 0;
 	overflow: hidden;
 	transition: var(--transition);
-}
-
-.show-container {
-	height: 10rem;
 }
