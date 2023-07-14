@@ -317,7 +317,7 @@ Modal
 	visibility: visible;
 	opacity: 1;
 	transition-property: opacity;
-	transition-duration: 2s;
+	transition-duration: 0.5s;
 }
 
 .modal-container {
