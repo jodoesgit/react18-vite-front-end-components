@@ -1,6 +1,6 @@
 import Home from "./Home";
-import Modal from "./assets/Modal";
-import Sidebar from "./assets/Sidebar";
+import Modal from "./Modal";
+import Sidebar from "./Sidebar";
 
 const App = () => {
 	return (
